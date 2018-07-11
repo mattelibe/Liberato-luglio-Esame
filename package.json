@@ -1,0 +1,20 @@
+{
+  "name": "Liberato-luglio-Esame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattelibe/Liberato-luglio-Esame.git"
+  },
+  "keywords": [],
+  "author": "Matteo Liberato <libe95@hotmail.it>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattelibe/Liberato-luglio-Esame/issues"
+  },
+  "homepage": "https://github.com/mattelibe/Liberato-luglio-Esame#readme"
+}
