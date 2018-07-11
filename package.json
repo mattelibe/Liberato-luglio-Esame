@@ -16,5 +16,8 @@
     "url": "https://github.com/mattelibe/Liberato-luglio-Esame/issues"
   },
   "homepage": "https://github.com/mattelibe/Liberato-luglio-Esame#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
