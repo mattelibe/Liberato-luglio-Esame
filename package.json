@@ -1,7 +1,6 @@
 {
-  "name": "Liberato-luglio-Esame",
+  "name": "liberato-luglio-esame",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/mattelibe/Liberato-luglio-Esame/issues"
   },
-  "homepage": "https://github.com/mattelibe/Liberato-luglio-Esame#readme"
+  "homepage": "https://github.com/mattelibe/Liberato-luglio-Esame#readme",
+  "description": ""
 }
