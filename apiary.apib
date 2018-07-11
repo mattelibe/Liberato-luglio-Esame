@@ -1,0 +1,159 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# liberato-luglio-esame
+
+Polls is a simple API allowing consumers to view polls and vote in them.
+
+## Questions Collection [/questions]
+
+### List All Teams [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "teamID": "01",
+                "name": "Croazia",
+                "is_still_in": true,
+                "matches": [
+                    {
+                        "opponent": "Italy",
+                        "outcome": "D"
+                    }, {
+                        "opponent": "France",
+                        "outcome": "L"
+                    }, {
+                        "opponent": "England",
+                        "outcome": "L"
+                    }, {
+                        "opponent": "Belgium",
+                        "outcome": "W"
+                    }
+                ]
+            }
+        ]
+
+### Create a Team [POST]
+
+Inserisci una nuova squadra
+
++ Request (application/json)
+
+        {
+            "teamID": "02",
+            "name": "Brazil",
+            "is_still_in": true,
+            "matches": [
+                {
+                        "opponent": "France",
+                        "outcome": "W"
+                }, {
+                        "opponent": "Belgium",
+                        "outcome": "W"
+                    }
+                ]
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /teams/02
+
+    + Body
+
+            
+        {
+            "teamID": "02",
+            "name": "Brazil",
+            "is_still_in": true,
+            "matches": [
+                {
+                        "opponent": "France",
+                        "outcome": "W"
+                }, {
+                        "opponent": "Belgium",
+                        "outcome": "W"
+                    }
+                ]
+        }
+         
+
+
+
+   
+### Update a Team/Match [PUT]
+
+Aggiorna i dati
+
++ Request (application/json)
+
+        {
+            "teamID": "02",
+            "name": "Brazil",
+            "is_still_in": true,
+            "matches": [
+                {
+                        "opponent": "France",
+                        "outcome": "L"
+                }, {
+                        "opponent": "Belgium",
+                        "outcome": "W"
+                    }
+                ]
+        }
+
++ Response 200 (application/json)
+
+    + Headers
+
+            Location: /teams/02
+
+    + Body
+
+            
+        {
+            "teamID": "02",
+            "name": "Brazil",
+            "is_still_in": true,
+            "matches": [
+                {
+                        "opponent": "France",
+                        "outcome": "L"
+                }, {
+                        "opponent": "Belgium",
+                        "outcome": "W"
+                    }
+                ]
+        }
+        
+        
+### Delete a Team/Match [DELETE]
+
+Inserisci una nuova squadra
+
++ Request (application/json)
+
+        {
+            "teamID": "02",
+            "name": "Brazil",
+            "is_still_in": true,
+            "matches": [
+                {
+                        "opponent": "France",
+                        "outcome": "W"
+                }, {
+                        "opponent": "Belgium",
+                        "outcome": "W"
+                    }
+                ]
+        }
+
++ Response 204 (application/json)
+
+    + Headers
+
+            Location: /teams/02
+
+    + Body
